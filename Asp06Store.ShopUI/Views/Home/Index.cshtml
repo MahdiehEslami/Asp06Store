@@ -1,0 +1,11 @@
+﻿@model ProductListViewModel
+
+<h1>Welcome to Asp.net06</h1>
+
+@foreach(var item in Model.Data.Data)
+{
+   @Html.Partial("ProductSummary",item)
+}
+    <div class="btn-group m-1" page-model="Model.Data.pageInfo" page-action="Indx" page-class-enable="true" page-class="btn" page-class-normal="btn-outline-dark" page-class-selected="btn-success">
+
+    </div>
